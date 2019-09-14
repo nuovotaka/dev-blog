@@ -1,6 +1,6 @@
 ### Hugo Build Works
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3c05e1bc-7aae-48de-b1e1-d86f8ea24e34/deploy-status)](https://app.netlify.com/sites/nuovotaka-dev-blog/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7fc0e9e5-6534-44e8-add6-7e8d92e61229/deploy-status)](https://app.netlify.com/sites/keen-roentgen-a388da/deploys)
 
 # Twenty Fourteen
 [twentyfouteen](http://themes.gohugo.io/twentyfourteen/)
