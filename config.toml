@@ -8,7 +8,7 @@ theme="twentyfourteen"
 paginate = 10 # To specify a multiple of 3
 disqusShortname = "" # optional
 disableKinds = "RSS"
-hasCJKLanguage = true
+hasCJKLanguage = "true"
 
 [permalinks]
   post = "/:year/:month/:slug/"
