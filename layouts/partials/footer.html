@@ -1,0 +1,22 @@
+		</div><!-- #main -->
+
+		<footer id="colophon" class="site-footer">
+
+			<div class="site-info">
+				<a href="https://gohugo.io">Proudly powered by Hugo</a>
+			</div><!-- .site-info -->
+			<div class="sns-icons">
+				<span><a class="icon-github" href="https://github.com/{{ .Site.Params.github }}"></a></span>
+				<span><a class="icon-twitter" href="https://www.twitter.com/{{ .Site.Params.twitter }}"></a></span>
+			</div>
+			<div class="site-copyright">
+				<p>{{ .Site.Copyright }}</p>
+			</div>
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+	<div class="gototop"><span><a class="icon-circle-up" href="#page"></a></span></div>
+	<script type='text/javascript' src='{{ .Site.BaseURL }}/js/functions.js'></script>
+	<script type='text/javascript' src='{{ .Site.BaseURL }}/js/myfunctions.js'></script>
+	{{ template "_internal/google_analytics_async.html" . }}
+</body>
+</html>

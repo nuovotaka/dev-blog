@@ -1,0 +1,51 @@
+<article class="post type-post status-publish format-standard hentry">
+
+	<!-- .entry-header -->
+	<header class="entry-header">
+
+	{{ $baseurl := .Site.BaseURL }}
+
+		<div class="entry-meta">
+			<span class="cat-links">
+                {{ range .Params.categories }}
+                <a href="{{ $baseurl }}/categories/{{ lower . | urlize }}/index.html" rel="category">{{ . }}</a>
+                {{ end }}
+			</span>
+		</div>
+
+		<h2 class="entry-title">
+			<a href="{{ .Permalink }}">{{ .Title }}</a>
+		</h2>
+
+		<div class="entry-meta">
+			<span class="entry-date">
+				<a href="{{ .Permalink }}index.html" rel="bookmark">
+					<time class="entry-date" datetime="{{ .Date.Format "2006-01-02" }}">
+						{{ .Date.Format "2006-01-02" }}
+					</time>
+				</a>
+			</span>
+		</div><!-- .entry-meta -->
+
+	</header>
+
+	<div class="entry-content">
+		{{ .Summary }}
+
+	  {{ if .Truncated }}
+
+			<span>
+		    <a href="{{ .RelPermalink }}">(続きを読む)</a>
+			</span>
+
+	  {{ end }}
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+		<span class="tag-links">
+			{{ range .Params.tags }}
+                <a href="{{ $baseurl}}/tags/{{ lower . | urlize }}/index.html" rel="tag">{{ . }}</a>
+            {{ end }}
+		</span>
+	</footer>
+</article> <!-- #post-## -->

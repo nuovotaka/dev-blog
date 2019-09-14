@@ -1,0 +1,147 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?uh9oyz');
+	src:url('../fonts/icomoon.eot?uh9oyz#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?uh9oyz') format('truetype'),
+		url('../fonts/icomoon.woff?uh9oyz') format('woff'),
+		url('../fonts/icomoon.svg?uh9oyz#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	color: #eee;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-new-tab:after {
+	content: "\e90e";
+	display: inline-block;
+	text-decoration: none;
+	opacity: 0.7;
+}
+.icon-link:after {
+	content: "\e90f";
+	display: inline-block;
+	text-decoration: none;
+	opacity: 0.7;
+}
+.icon-circle-up:before {
+	content: "\e90d";
+}
+.icon-envelop:before {
+	content: "\e900";
+}
+.icon-google-plus:before {
+	content: "\e901";
+}
+.icon-facebook:before {
+	content: "\e902";
+}
+.icon-instagram:before {
+	content: "\e903";
+}
+.icon-twitter:before {
+	content: "\e904";
+}
+.icon-feed:before {
+	content: "\e905";
+}
+.icon-youtube:before {
+	content: "\e906";
+}
+.icon-flickr:before {
+	content: "\e907";
+}
+.icon-dribbble:before {
+	content: "\e908";
+}
+.icon-github:before {
+	content: "\e909";
+}
+.icon-linkedin:before {
+	content: "\e90a";
+}
+.icon-stackoverflow:before {
+	content: "\e90b";
+}
+.icon-pinterest:before {
+	content: "\e90c";
+}
+
+.sns-icons {
+	text-align: center;
+	padding: .5rem .5rem;
+	font-size: 2rem;
+}
+
+.sns-icons .icon-twitter:active,
+.sns-icons .icon-twitter:hover {
+	border-radius: 50%;
+	color: #eee;
+	background-color: #55acee;
+}
+
+.sns-icons .icon-github:active,
+.sns-icons .icon-github:hover {
+	color: #ccc;
+}
+
+.icon-link,
+.icon-new-tab {
+	color: #E25854;
+}
+
+.icon-link a:hover,
+.icon-new-tab a:hover {
+	color: #EB7A77;
+}
+
+/* external link */
+
+.entry-content a[href^="http"],
+.entry-summary a[href^="http"],
+.page-content a[href^="http"],
+.comment-content a[href^="http"] {
+	margin-right: 0.3rem;
+}
+
+.entry-content a[href^="http"]:after,
+.entry-summary a[href^="http"]:after,
+.page-content a[href^="http"]:after,
+.comment-content a[href^="http"]:after {
+	position: relative;
+	top: -0.2rem;
+	right: -0.2rem;
+	font-size: 0.8rem;
+}
+
+/* internal link*/
+
+.entry-content a[href^="https://blog.nuovotaka.com"],
+.entry-summary a[href^="https://blog.nuovotaka.com"],
+.page-content a[href^="https://blog.nuovotaka.com"],
+.comment-content a[href^="https://blog.nuovotaka.com"] {
+	margin-right: 0.5rem;
+}
+
+.entry-content a[href^="https://blog.nuovotaka.com"]:after,
+.entry-summary a[href^="https://blog.nuovotaka.com"]:after,
+.page-content a[href^="https://blog.nuovotaka.com"]:after,
+.comment-content a[href^="https://blog.nuovotaka.com"]:after {
+	position: relative;
+	top: -0.2rem;
+	right: -0.2rem;
+	font-size: 0.8rem;
+}

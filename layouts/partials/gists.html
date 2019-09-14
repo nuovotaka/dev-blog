@@ -1,0 +1,17 @@
+<aside class="widget widget_categories">
+    	
+	<h2 class="widget-title">Recent Gists</h2>
+
+	<ul>
+        {{ $urlPre := "https://api.github.com/users/" }}
+        {{ $githubUser := .Site.Params.github }}
+        {{ $gistJ := getJSON $urlPre $githubUser "/gists" }}
+        {{ range first 5 $gistJ }}
+            {{ if .public }}
+              <li><a href="{{ .html_url }}">{{ with .description }}{{ . }}{{ else }}(No description){{end}}</a></li>
+            {{ end }}
+        {{ end }}
+
+	</ul>
+
+</aside>

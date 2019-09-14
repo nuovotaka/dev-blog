@@ -1,0 +1,29 @@
+baseurl = "//blog.nuovotaka.com"
+title = "dev.NUOVOTAKA"
+copyright = "© 2015 dev.NUOVOTAKA"
+author = "nuovotaka"
+languageCode = "ja"
+MetaDataFormat = "toml"
+theme="twentyfourteen"
+paginate = 10 # To specify a multiple of 3
+disqusShortname = "" # optional
+disableKinds = "RSS"
+hasCJKLanguage = true
+
+[permalinks]
+  post = "/:year/:month/:slug/"
+
+[params]
+  Description = "nuovotaka.comの中の人のブログ" # optional
+  googleAnalytics = "UA-110068374-1" # optional
+  twitter = "nuovotaka" # optional
+  github = "nuovotaka" # optional
+  facebook = "" # optional
+  googleplus = "" # optional
+  linkedin = "" # optional
+
+[[menu.main]]
+    name = "NUOVOTAKA.COM"
+    identifier = "hometest"
+    weight = -100
+    url = "https://nuovotaka.com"

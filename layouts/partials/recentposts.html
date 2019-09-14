@@ -1,0 +1,13 @@
+<aside id="recent-posts-3" class="widget widget_recent_entries">
+
+	{{ if isset .Data "Pages" }}
+	<h2 class="widget-title">Recent Posts</h2>
+		<ul>
+			{{ range first 5 (where .Site.RegularPages "Section" "post") }}
+			<li>
+				<a href="{{ .Permalink }}index.html">{{ .Title }}</a>
+			</li>
+			{{ end }}
+		</ul>
+	{{ end }}
+</aside>
